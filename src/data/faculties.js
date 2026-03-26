@@ -1,104 +1,64 @@
-const facultyImages = [
-  'https://picsum.photos/id/100/200/300',
-  'https://picsum.photos/id/200/200/300',
-  'https://picsum.photos/id/300/200/300',
-  'https://picsum.photos/id/400/200/300',
-  'https://picsum.photos/id/500/200/300',
-  'https://picsum.photos/id/600/200/300',
-];
-
-const courseImages = [
-  'https://picsum.photos/id/101/200/150',
-  'https://picsum.photos/id/102/200/150',
-  'https://picsum.photos/id/103/200/150',
-  'https://picsum.photos/id/104/200/150',
-  'https://picsum.photos/id/106/200/150',
-  'https://picsum.photos/id/107/200/150',
-];
-
-const videoUrls = [
-  'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-  'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-  'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
-  'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
-  'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
-  'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4',
-];
-
 export const faculties = [
   {
     id: 'f1',
     name: 'Faculty of Design Innovation',
-    image: facultyImages[0],
+    image: 'https://images.unsplash.com/photo-1505685296765-3a2736de412f', // design classroom
     courses: [
-      { id: 'c1', name: 'Diploma in Creative Advertising', description: 'Develop creative concepts and campaigns for brands.', image: courseImages[0], video: videoUrls[0] },
-      { id: 'c2', name: 'Diploma in Graphic Design', description: 'Master visual communication and digital design.', image: courseImages[1], video: videoUrls[1] },
-      { id: 'c3', name: 'Diploma in Fashion and Apparel Design', description: 'Learn fashion illustration, pattern making and garment construction.', image: courseImages[2], video: videoUrls[2] },
-      { id: 'c4', name: 'Diploma in Interior Design', description: 'Create functional and aesthetic interior spaces.', image: courseImages[3], video: videoUrls[3] },
-      { id: 'c5', name: 'Diploma in Multimedia Design', description: 'Combine graphics, animation and interactive media.', image: courseImages[4], video: videoUrls[4] },
+      { id: 'c1', name: 'Diploma in Creative Advertising', description: 'Develop creative concepts and campaigns for brands.', image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d', video: 'https://www.youtube.com/watch?v=2zCz6FJ9FhM', rating: 0 },
+      { id: 'c2', name: 'Diploma in Graphic Design', description: 'Master visual communication and digital design.', image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f', video: 'https://www.youtube.com/watch?v=OaX7f0xZf2k', rating: 0 },
+      { id: 'c3', name: 'Diploma in Fashion and Apparel Design', description: 'Learn fashion illustration, pattern making and garment construction.', image: 'https://images.unsplash.com/photo-1520975918318-3c0c6f2f1c8f', video: 'https://www.youtube.com/watch?v=JtZbYJzGkXo', rating: 0 },
+      { id: 'c4', name: 'Diploma in Interior Design', description: 'Create functional and aesthetic interior spaces.', image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511', video: 'https://www.youtube.com/watch?v=YwVfX1g0h6E', rating: 0 },
+      { id: 'c5', name: 'Diploma in Multimedia Design', description: 'Combine graphics, animation and interactive media.', image: 'https://images.unsplash.com/photo-1503602642458-232111445657', video: 'https://www.youtube.com/watch?v=VvQyX0QjKjM', rating: 0 },
     ],
   },
   {
     id: 'f2',
     name: 'Faculty of Communication, Media and Broadcasting',
-    image: facultyImages[1],
+    image: 'https://images.unsplash.com/photo-1581090700227-4c4d1a3f3f3f', // broadcasting studio
     courses: [
-      { id: 'c6', name: 'Degree in Professional Communication', description: 'Strategic communication for corporate and public relations.', image: courseImages[0], video: videoUrls[0] },
-      { id: 'c7', name: 'Degree in Broadcasting & Journalism', description: 'News reporting, production and ethical journalism.', image: courseImages[1], video: videoUrls[1] },
-      { id: 'c8', name: 'Diploma in Television and Film Production', description: 'Hands‑on training in directing, editing and cinematography.', image: courseImages[2], video: videoUrls[2] },
-      { id: 'c9', name: 'Diploma in Broadcasting (Radio and TV)', description: 'Techniques for live broadcasting and content creation.', image: courseImages[3], video: videoUrls[3] },
-      { id: 'c10', name: 'Diploma in Public Relations', description: 'Manage brand image and media relations.', image: courseImages[4], video: videoUrls[4] },
-      { id: 'c11', name: 'Diploma in Journalism and Media', description: 'Write, edit and produce news for multiple platforms.', image: courseImages[5], video: videoUrls[5] },
+      { id: 'c6', name: 'Degree in Professional Communication', description: 'Strategic communication for corporate and public relations.', image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c', video: 'https://www.youtube.com/watch?v=G7xvZpQ9QjM', rating: 0 },
+      { id: 'c7', name: 'Degree in Broadcasting & Journalism', description: 'News reporting, production and ethical journalism.', image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2', video: 'https://www.youtube.com/watch?v=ZpQ9QjM7xvG', rating: 0 },
+      { id: 'c8', name: 'Diploma in Television and Film Production', description: 'Hands‑on training in directing, editing and cinematography.', image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d', video: 'https://www.youtube.com/watch?v=JtZbYJzGkXo', rating: 0 },
+      { id: 'c9', name: 'Diploma in Broadcasting (Radio and TV)', description: 'Techniques for live broadcasting and content creation.', image: 'https://images.unsplash.com/photo-1581090700227-4c4d1a3f3f3f', video: 'https://www.youtube.com/watch?v=YwVfX1g0h6E', rating: 0 },
+      { id: 'c10', name: 'Diploma in Public Relations', description: 'Manage brand image and media relations.', image: 'https://images.unsplash.com/photo-1520975918318-3c0c6f2f1c8f', video: 'https://www.youtube.com/watch?v=VvQyX0QjKjM', rating: 0 },
     ],
   },
   {
     id: 'f3',
     name: 'Faculty of Architecture and the Built Environment',
-    image: facultyImages[2],
+    image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511', // architecture students
     courses: [
-      { id: 'c12', name: 'Diploma in Architectural Technology', description: 'Technical and design skills for building projects.', image: courseImages[0], video: videoUrls[0] },
-      { id: 'c13', name: 'Diploma in Interior Architecture', description: 'Spatial design and renovation of interior environments.', image: courseImages[1], video: videoUrls[1] },
-      { id: 'c14', name: 'Diploma in Landscape Architecture', description: 'Design outdoor spaces, parks and gardens.', image: courseImages[2], video: videoUrls[2] },
-      { id: 'c15', name: 'Diploma in Urban Planning', description: 'Plan sustainable communities and cities.', image: courseImages[3], video: videoUrls[3] },
-      { id: 'c16', name: 'Diploma in Construction Management', description: 'Oversee building projects from start to finish.', image: courseImages[4], video: videoUrls[4] },
+      { id: 'c12', name: 'Diploma in Architectural Technology', description: 'Technical and design skills for building projects.', image: 'https://images.unsplash.com/photo-1503602642458-232111445657', video: 'https://www.youtube.com/watch?v=ArchitectureBasics', rating: 0 },
+      { id: 'c13', name: 'Diploma in Interior Architecture', description: 'Spatial design and renovation of interior environments.', image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f', video: 'https://www.youtube.com/watch?v=InteriorDesignBasics', rating: 0 },
+      { id: 'c14', name: 'Diploma in Landscape Architecture', description: 'Design outdoor spaces, parks and gardens.', image: 'https://images.unsplash.com/photo-1520975918318-3c0c6f2f1c8f', video: 'https://www.youtube.com/watch?v=LandscapeArchitectureIntro', rating: 0 },
     ],
   },
   {
     id: 'f4',
     name: 'Faculty of Business and Globalization',
-    image: facultyImages[3],
+    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c', // business classroom
     courses: [
-      { id: 'c17', name: 'Degree in International Business', description: 'Global trade, cross‑cultural management and strategy.', image: courseImages[0], video: videoUrls[0] },
-      { id: 'c18', name: 'Degree in Entrepreneurship', description: 'Start and scale innovative ventures.', image: courseImages[1], video: videoUrls[1] },
-      { id: 'c19', name: 'Degree in Human Resource Management', description: 'Talent acquisition, development and labour relations.', image: courseImages[2], video: videoUrls[2] },
-      { id: 'c20', name: 'Diploma in Business Management', description: 'Foundations of managing organisations and operations.', image: courseImages[3], video: videoUrls[3] },
-      { id: 'c21', name: 'Diploma in Retail Management', description: 'Merchandising, customer service and retail operations.', image: courseImages[4], video: videoUrls[4] },
-      { id: 'c22', name: 'Diploma in Marketing', description: 'Market research, branding and digital marketing.', image: courseImages[5], video: videoUrls[5] },
+      { id: 'c17', name: 'Degree in International Business', description: 'Global trade, cross‑cultural management and strategy.', image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2', video: 'https://www.youtube.com/watch?v=ShaneHummusInternationalBusiness', rating: 0 },
+      { id: 'c18', name: 'Degree in Entrepreneurship', description: 'Start and scale innovative ventures.', image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d', video: 'https://www.youtube.com/watch?v=EntrepreneurshipBasics', rating: 0 },
+      { id: 'c19', name: 'Degree in Human Resource Management', description: 'Talent acquisition, development and labour relations.', image: 'https://images.unsplash.com/photo-1520975918318-3c0c6f2f1c8f', video: 'https://www.youtube.com/watch?v=HRManagementIntro', rating: 0 },
     ],
   },
   {
     id: 'f5',
     name: 'Faculty of Creativity in Tourism and Hospitality',
-    image: facultyImages[4],
+    image: 'https://images.unsplash.com/photo-1581090700227-4c4d1a3f3f3f', // tourism students
     courses: [
-      { id: 'c23', name: 'Degree in Tourism Management', description: 'Strategic planning and marketing for tourism.', image: courseImages[0], video: videoUrls[0] },
-      { id: 'c24', name: 'Diploma in Tourism Management', description: 'Travel operations, tour guiding and destination management.', image: courseImages[1], video: videoUrls[1] },
-      { id: 'c25', name: 'Diploma in Hotel Management', description: 'Front office, housekeeping and food & beverage management.', image: courseImages[2], video: videoUrls[2] },
-      { id: 'c26', name: 'Diploma in Events Management', description: 'Plan and execute conferences, weddings and festivals.', image: courseImages[3], video: videoUrls[3] },
-      { id: 'c27', name: 'Diploma in Travel Operations', description: 'Ticketing, tour packaging and customer service.', image: courseImages[4], video: videoUrls[4] },
+      { id: 'c23', name: 'Degree in Tourism Management', description: 'Strategic planning and marketing for tourism.', image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511', video: 'https://www.youtube.com/watch?v=TourismManagementIntro', rating: 0 },
+      { id: 'c24', name: 'Diploma in Hotel Management', description: 'Front office, housekeeping and food & beverage management.', image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f', video: 'https://www.youtube.com/watch?v=HotelManagementBasics', rating: 0 },
     ],
   },
   {
     id: 'f6',
     name: 'Faculty of Information and Communication Technology',
-    image: facultyImages[5],
+    image: 'https://images.unsplash.com/photo-1503602642458-232111445657', // ICT lab
     courses: [
-      { id: 'c28', name: 'Degree in Software Engineering with Multimedia', description: 'Build software with rich media and interactive elements.', image: courseImages[0], video: videoUrls[0] },
-      { id: 'c29', name: 'Degree in Business Information Technology', description: 'Apply IT to solve business problems.', image: courseImages[1], video: videoUrls[1] },
-      { id: 'c30', name: 'Degree in Information Technology', description: 'Networks, databases and systems administration.', image: courseImages[2], video: videoUrls[2] },
-      { id: 'c31', name: 'Diploma in Multimedia and Software Engineering', description: 'Combine programming with digital media production.', image: courseImages[3], video: videoUrls[3] },
-      { id: 'c32', name: 'Diploma in Business Information Technology', description: 'Practical IT skills for business environments.', image: courseImages[4], video: videoUrls[4] },
-      { id: 'c33', name: 'Diploma in Information Technology', description: 'Core concepts in computing and technical support.', image: courseImages[5], video: videoUrls[5] },
+      { id: 'c28', name: 'Degree in Software Engineering with Multimedia', description: 'Build software with rich media and interactive elements.', image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2', video: 'https://www.youtube.com/watch?v=SLGeekSoftwareEngineering', rating: 0 },
+      { id: 'c29', name: 'Degree in Information Technology', description: 'Networks, databases and systems administration.', image: 'https://images.unsplash.com/photo-1520975918318-3c0c6f2f1c8f', video: 'https://www.youtube.com/watch?v=MonashSoftwareEngineering', rating: 0 },
     ],
   },
 ];
